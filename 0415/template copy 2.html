@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap元件0408</title>
+
+
+    <!--引用Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+
+  <!--導覽菜單-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="http://www.ntue.edu.tw"><img src="img/yun.jpg" width="64" height="64">YunZhen's website</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+   <!--下拉式選單-->
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Homework
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="../0318/index.html">0318</a></li>
+          <li><a class="dropdown-item" href="../0325/index.html">0325</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+    <!--這是Bootstrap的Carousel元件範例-->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+
+        <!--Slides-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/pic1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/pic2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/pic3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+
+
+        <!--上一張-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+
+        <!--下一張-->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+<!--CONTENT-->
+<div class="container">
+  <h1></h1>
+  <p></p>
+</div>
+
+<br>
+<!--第一列名片-->
+<div class="container text">
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 17rem;">
+                    <img src="img/pic1.jpg" class="card-img-top" alt="..." width="180" height="200">
+                                                                                   
+                    <div class="card-body">
+                    <h5 class="card-title">2025/02/25這是我的網頁</h5>
+                    <p class="card-text"> WELCOME TO YUNZHEN'S WEB</p>
+                                       
+                     <a href="https://sites.google.com/stu.ntue.edu.tw/yunzhen" class="btn btn-primary"> 點擊查看</a>
+                                   
+                </div>
+            </div>
+        </div>  
+        <div class="col">
+            <div class="card" style="width: 17rem;">
+                <img src="img/pic1.jpg" class="card-img-top" alt="..." width="180" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">2025/03/04這是詐騙</h5>
+                    <p class="card-text">NTUE OR ART</br>
+                        </p></p>
+                    <a href="../0304/index.html" class="btn btn-primary"> 點擊查看</a>
+                </div>
+            </div>
+          </div>
+            <div class="col">
+            <div class="card" style="width: 17rem;">
+                    <img src="img/pic1.jpg" class="card-img-top" alt="..." width="180" height="200">
+                                                                                   
+                    <div class="card-body">
+                    <h5 class="card-title">2025/03/11唐詩賞析</h5>
+                    <p class="card-text">POEM</p>
+                     <a href="../0311new/index.html" class="btn btn-primary"> 點擊查看</a>
+                                   
+                </div>
+            </div>
+        </div>  
+    <div>
+<div>
+
+
+</br>
+      <!--第二列名片-->
+<div class="container text">
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 17rem;">
+                    <img src="img/pic1.jpg" class="card-img-top" alt="..." width="180" height="200">
+                                                                                   
+                    <div class="card-body">
+                    <h5 class="card-title">2025/03/18我的歌曲</h5>
+                    <p class="card-text">LET ME DOWN SLOWLY - ALEC</br>
+                                        COULD U FIND A WAY </br>
+                                        TO LET ME DOWN SLOWLY </p>
+                                       
+                     <a href="../0318/index.html" class="btn btn-primary"> 點擊查看</a>
+                                   
+                </div>
+            </div>
+        </div>  
+        <div class="col">
+            <div class="card" style="width: 17rem;">
+                <img src="img/pic1.jpg" class="card-img-top" alt="..." width="180" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">2025/03/25五首唐詩</h5>
+                    <p class="card-text">李白-送孟浩然之廣陵</br>
+                        李白-靜夜思</br>
+                        李白-夜宿山寺......</br>
+                        </p></p>
+                    <a href="../0325/index.html" class="btn btn-primary"> 點擊查看</a>
+                </div>
+            </div>
+          </div>
+            <div class="col">
+            <div class="card" style="width: 17rem;">
+                    <img src="img/yun.jpg" class="card-img-top" alt="..." width="180" height="200">
+                                                                                   
+                    <div class="card-body">
+                    <h5 class="card-title">2025/04/08 Bootstrap</h5>
+                    <p class="card-text">引用Bootstrap</p>
+                     <a href="../0408/index.html" class="btn btn-primary"> 點擊查看</a>
+                                   
+                </div>
+            </div>
+        </div>  
+    <div>
+<div>
+
+<!--FOOTER-->
+<div>
+<footer class="text-center text-lg-start bg-light text-muted">
+<div class="text-center p-4" style="background-color: #f1f1f1;">
+  <p>&copy; 2025 YunZhen. All rights reserved.</p>
+</footer>
+</div> 
+
+</body>
+
+
+</html>
